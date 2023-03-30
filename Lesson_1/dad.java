@@ -10,6 +10,15 @@ public class dad extends family{
         System.out.println("Я могу водить машину");
     }
 
+   /*  public void nameFamily(String fam){
+
+        if (fam == "Крапивин"){
+        
+        System.out.println("Да работает");
+        }else {
+            System.out.println("не работает");
+        }
     
+     }  */ 
     
 }

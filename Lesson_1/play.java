@@ -1,5 +1,7 @@
 package Lesson_1;
 public class play {
+    private static String family;
+
     public static void main(String[] age){
 
        
@@ -12,8 +14,8 @@ public class play {
         egor.say();
         egor.display();
 
-        
-        System.out.println();
+     //  ivan.nameFamily(ivan.family);
+    // egor.nameFamily(egor.family);
        
     }
 
