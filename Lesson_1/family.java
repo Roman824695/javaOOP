@@ -1,42 +1,62 @@
-/*
-1. Реализовать, с учетом ооп подхода, генеалогическое дерево Человек.
-Идея: описать некоторое количество компонент, например:
-модель человека
-компонента хранения связей и отношений между людьми: родитель, ребёнок - классика, но можно подумать и про отношение, брат, свекровь, сестра и т. д.
-компонент для проведения исследований
-дополнительные компоненты по желанию, например отвечающие за вывод данных в консоль, загрузку и сохранения в файл, получение\построение отдельных моделей человека
-Под “проведением исследования” можно понимать получение всех детей выбранного человека.
-*/
-
 package Lesson_1;
 
-
-public class family {
-    String family;
-    String type;
-    String name;
-    Integer age;
-
-
-public family(String family,String type,String name,Integer age){
-    this.family = family;
-    this.type = type;
-    this.name = name;
-    this.age = age;
-}
+public abstract class family implements interf  {
+    
+        private String family;
+        String type;
+        String name;
+        private Integer age;
+        private Integer yearOfBirth;
 
 
-public void display() {
-    System.out.println( "Семья: " + family +
+        public  family(String family,String type,String name,Integer age,Integer yearOfBirth){
+            this.family = family;
+             this.type = type;
+             this.name = name;
+            this.age = age;
+            this.yearOfBirth = yearOfBirth;
+         }    
+
+    @Override
+    public void display() {
+        System.out.println( "Семья: " + family +
     "\nСемейное положение: " + type  +
     "\nИмя: " + name  +
     "\nЛет: " + age );
-    
-
     }
 
- 
-    
+    @Override
+    public String getFamily() {
+        return family;
+    }
+
+    @Override
+    public void printName(String name) {
+        System.out.println(name);
+    }
+
+    @Override
+    public Integer getyearOfBirth() {
+        return yearOfBirth;
+    }
+
+    @Override
+    public void setyearOfBirth(Integer yearOfBirth){
+        this.yearOfBirth = yearOfBirth;
+    }
+
+    @Override
+    public void getYear(String year, Integer year2, String name) {
+        if(Integer.parseInt(year)> year2 ){
+            if( (Integer.parseInt(year)- year2) > 100){
+        System.out.println("В " + year + " году \n "+ name +"у будет "+(Integer.parseInt(year) - year2) );
+        due();
+    }else{System.out.println("В " + year + " году \n "+ name +"у будет "+(Integer.parseInt(year) - year2) );}
+    }else{
+        System.out.println(name + " ещё не родился");
+    }
 }
 
-
+       public abstract void due();
+    
+}
