@@ -3,16 +3,18 @@ package Lesson_1;
 public abstract class family implements interf  {
     
         private String family;
-        String type;
         String name;
+        String nameDad;
+        String type;
         private Integer age;
         private Integer yearOfBirth;
 
 
-        public  family(String family,String type,String name,Integer age,Integer yearOfBirth){
+        public  family(String family,String name,String nameDad,String type,Integer age,Integer yearOfBirth){
             this.family = family;
              this.type = type;
              this.name = name;
+             this.nameDad = nameDad;
             this.age = age;
             this.yearOfBirth = yearOfBirth;
          }    
@@ -29,11 +31,16 @@ public abstract class family implements interf  {
     public String getFamily() {
         return family;
     }
-
     @Override
-    public void printName(String name) {
-        System.out.println(name);
+    public String getName(){
+        return name;
     }
+    @Override
+        public String getNameDad() {
+           return nameDad;
+        }
+
+    
 
     @Override
     public Integer getyearOfBirth() {
@@ -58,5 +65,7 @@ public abstract class family implements interf  {
 }
 
        public abstract void due();
+
+    
     
 }

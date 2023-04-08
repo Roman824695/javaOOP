@@ -2,13 +2,11 @@ package Lesson_1;
 
 public class son extends dad {
 
-    public son(String family,String type, String name, Integer age,Integer yearOfBirth) {
-        super(family, type, name, age, yearOfBirth);
+    public son(String family, String name, String nameDad, String type,  Integer age, Integer yearOfBirth) {
+        super(family, name, nameDad, type, age, yearOfBirth);
         
     }
-    @Override
-    public void say(){
-        System.out.println("Я хочу водить машину");
-    }
     
-    }
+    
+    
+    }  
