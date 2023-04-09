@@ -39,37 +39,31 @@ public class dad extends family{
 
 
 
-        @Override
-        public ArrayList<String> getArrayNameDad(String nameDad) {
-            ArrayList<String> nDad = new ArrayList<>();
-            for (int i = 0; i < nameDad.length(); i++) {
-                
-                String str1 = String.valueOf(nameDad.charAt(i));
-                nDad.add(str1);
-            
-        }
-            return nDad;
-        }
+     
 
         // Ошибок нет, но не пойму почему не хочет принять массив.
         static <T extends Comparable<T>, V extends T> boolean array(T[] x, V[] y){
             if (x.length != y.length){                
-            return true;   
+            return false;   
         }
-            return false;
-
-
-
-
-
-     
-
-
-    }  
-       
+        for (int i = 0; i < x.length; i++) {
+            if(!x[i].equals(y[i]) ){
+                return false; 
+            }
+        }
+        
+            return true;
 
     }
 
+
+
+
+
+       
+
+     
+}
 
 
       

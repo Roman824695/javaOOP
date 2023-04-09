@@ -20,6 +20,7 @@ public void getYear(String year, Integer year2, String name );
 
 public ArrayList<String> getArrayName(String name);
 
-public ArrayList<String> getArrayNameDad(String nameDad);
+
+
 
     }

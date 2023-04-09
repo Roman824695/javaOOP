@@ -66,6 +66,6 @@ public abstract class family implements interf  {
 
        public abstract void due();
 
-    
+       
     
 }

@@ -1,6 +1,12 @@
 package Lesson_1;
+
+
+import java.util.ArrayList;
+
 public class play {
     
+    private static final ArrayList<String> T = null;
+
     public static void main(String[] age){
 
        
@@ -15,15 +21,22 @@ public class play {
            
           System.out.println(ivan.getArrayName(ivan.getName()));    //Массив из имени
           System.out.println(egor.getArrayName(egor.getName()));    //Массив из имени
-          System.out.println(ivan.getArrayNameDad(ivan.getNameDad()));   //Массив из имени отца.
-          System.out.println(egor.getArrayNameDad(egor.getNameDad()));   //Массив из имени отца.
+          System.out.println(ivan.getArrayName(ivan.getNameDad()));   //Массив из имени отца.
+          System.out.println(egor.getArrayName(egor.getNameDad()));   //Массив из имени отца.
+          
+        
+        
 
-         
-          //Пытаюсь передать массив, но встречаюсь с ошибкой и не пойму что с этим делать. (Class dad)
-          if(ivan.array(ivan.getArrayName(ivan.getName()), ivan.getArrayName(ivan.getName())) ){
-            System.out.println("Отец");
-          }else{
-            System.out.println("Не отец");
+
+
+          if(ivan.array(egor.getArrayName(egor.getNameDad()).toArray(new String[0]),ivan.getArrayName(ivan.getName()).toArray(new String[0])) ){
+            if(egor.getFamily() != ivan.getFamily()){
+              System.out.println("Не отец");
+            }else{
+              System.out.println("Отец");
+            }
+          }else
+          System.out.println("Не отец");
           }
 
           
@@ -33,4 +46,4 @@ public class play {
 
 
 
-}
+
