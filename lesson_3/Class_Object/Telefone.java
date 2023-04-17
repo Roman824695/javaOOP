@@ -2,12 +2,12 @@ package lesson_3.Class_Object;
 
 
     public class Telefone {
-        private String nameFactory;
-        private String model;
-        private double sizeDisplay;
-        private int quantityAkb;
-        protected String TypeOS;
-        private double price;
+        private  String nameFactory;
+        private  String model;
+        private  double sizeDisplay;
+        private  int quantityAkb;
+        protected  String TypeOS;
+        private  double price;
     
     
        
@@ -19,22 +19,22 @@ package lesson_3.Class_Object;
             this.TypeOS = TypeOS;
             this.price = price;
         }
-        public String getNameFactory() {
+        public  String getNameFactory() {
             return nameFactory;
         }
-        public String getModel() {
+        public  String getModel() {
             return model;
         }
-        public double getSizeDisplay() {
+        public  double getSizeDisplay() {
             return sizeDisplay;
         }
-        public int getQuantityAkb() {
+        public  int getQuantityAkb() {
             return quantityAkb;
         }
-        public String getTypeOS() {
+        public  String getTypeOS() {
             return TypeOS;
         }
-        public double getPrice() {
+        public  double getPrice() {
             return price;
         }
         /**
@@ -42,7 +42,7 @@ package lesson_3.Class_Object;
          * Если тут все подтягивается, как мне вывести этот метод в отдельный класс?
          */
 
-
+ 
         public String toString() {
             return 
              "\n" + "Марка телефона: " + nameFactory  +
