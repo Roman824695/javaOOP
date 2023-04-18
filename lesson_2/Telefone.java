@@ -13,12 +13,12 @@ public class Telefone {
     public Telefone(){
 
     }
-    public Telefone(String nameFactory, String model, double sizeDisplay, int quantityAkb, String typeOS, double price){
+    public Telefone(String nameFactory, String model, double sizeDisplay, int quantityAkb, String TypeOS, double price){
         this.nameFactory = nameFactory;
         this.model = model;
         this.sizeDisplay = sizeDisplay;
         this.quantityAkb = quantityAkb;
-        this.TypeOS = typeOS;
+        this.TypeOS = TypeOS;
         this.price = price;
     }
     public String getNameFactory() {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Shop implements SellTelefon{
-    private ArrayList<Telefone> listTelefon;
+   // private ArrayList<Telefone> listTelefon;
 
     @Override
     public ArrayList<Telefone> creat(ArrayList<Telefone> listTelefon) {
@@ -44,7 +44,7 @@ public class Shop implements SellTelefon{
     @Override
     public ArrayList<Telefone>
     addPhone(ArrayList<Telefone> listTelefon){
-     Telefon phone = new Telefon();
+     Telefone phone = new Telefone();
      Scanner sc = new Scanner(System.in);
      System.out.println("Введите назваание производителя: ");
      String factory = sc.next();
